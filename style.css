@@ -1,3 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+	font-family: sans-serif;
+}
+
 h1 {
-	color: blue;
+	font-size: 26px;
+	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 40px;
+	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code */
+}
+
+h3 {
+	font-size: 30px;
+	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
+}
+
+h4 {
+	font-size: 20px;
+	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p {
+	font-size: 22px;
+	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
+	line-height: 1.5;
+}
+
+li {
+	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
+	font-size: 20px;
+}
+
+footer p {
+	/* this descendent selector: all the p elements inside the fotter*/
+	font-size: 16px;
+}
+
+article header p {
+	/* Nested descendant selector*/
+	font-style: italic;
 }

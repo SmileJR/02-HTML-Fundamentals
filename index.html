@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <title>The Basic Language of the Web: HTML</title>
 <link rel="stylesheet" href="style.css">
+<!--Its not good practice to do in-line styling-->
 </head>
 
 <body>
@@ -21,13 +22,14 @@
 <!-- This is intro-->
 <h1>📘 Smile's Code Magazine</h1>
 
-<div> <!--This will be where the nav bar code starts-->
+<nav> <!--This will be where the nav bar code starts-->
   <!--This is a link to the blog page-->
 <a href="/blog.html">Blog</a>
 <a href="#">Challenges</a>
 <a href="#">Flexbox</a>
 <a href="#">CSS Grid</a>
-</div>
+</nav>
+<p>Test Paragrph</p>
 </header>
 
 <!--This is where the header code starts-->
@@ -71,7 +73,7 @@ width="50"
       
       <h3>What is HTML?</h3>
        <!--WE WILL BE USING STRONG FOR HTML CAPS-->
-       HTML stands for <strong>H</strong>yper</strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage.
+       HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage.
       It's a markup language that web developers use to structure and describe the content of a webpage (not a
       programming language).
       </p>
@@ -111,7 +113,6 @@ width="50"
 <!--This is where challenge #1 will go-->
 <aside>
   <h5>Related Posts</h5>
-  <>
           <ul>
       
       <li><img src="/img/related-1.jpg" alt="someone programming"
@@ -136,7 +137,9 @@ width="50"
 
 
 <footer>
+  <p>
   Copywright <!--HTML ENTITY--> &copy; 2027 by Smile's Code Magazine
+</p>
 </footer>
 </body>
 
