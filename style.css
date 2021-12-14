@@ -42,12 +42,28 @@ li {
 	font-size: 20px;
 }
 
-footer p {
-	/* this descendent selector: all the p elements inside the fotter*/
+/* You can only use an ID once*/
+#copywrite{
 	font-size: 16px;
+/* footer p {
+	this descendent selector: all the p elements inside the fotter
+	font-size: 16px;
+} */	
 }
 
-article header p {
-	/* Nested descendant selector*/
+
+
+}
+#author {
 	font-style: italic;
+	font-size: 10px;
+	/* This was the Nested descendant selector that we replaced with #author ID but we dont need it anymore now that we are using Id to streamline the code: 
+	article header p {
+	font-style: italic;*/
+}
+
+/*Now we are using classes*/
+.related-author {
+	font-size: 18px;
+	font-weight: bold;
 }
