@@ -5,13 +5,21 @@ h4,
 p,
 li {
 	font-family: sans-serif;
+	color: #444;
 }
 
+/*this selector will change all H to the same color instead of pasting the color into each snippet of code*/
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
 h1 {
 	font-size: 26px;
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
 	text-transform: uppercase;
 	font-style: italic;
+	/*Here we specify the color of h1*/
 }
 
 h2 {
@@ -68,3 +76,86 @@ li {
 .related {
 	list-style: none;
 }
+
+/*here will will specify background color*/
+.main-header {
+	background-color: #0a1822;
+}
+
+aside {
+	/*aside is ashort hand property*/
+	background-color: #f7f7f7;
+	border-top: 5pt solid #1098ad;
+	border-bottom: 5pt solid ##1098ad;
+}
+
+body {
+	/* we change the body's backgrouond color withc this code */
+	/*	background-color: salmon; */
+}
+
+/*.first-list {
+	font-weight: bold;
+}
+we will use a pseudo class to dchange the font to bold
+*/
+
+li:first-child {
+	font-weight: bold;
+}
+
+li:last-child {
+	font-style: italic;
+}
+
+li:nth-child(even) {
+	color: green;
+}
+
+/* Misconseption, this code wont work */
+article p:first-child {
+	color: red;
+}
+
+/* We will now be styling the hyperlinks using psuedo- this will only target elements that have an href attribute */
+a:link {
+	color: #1098ad;
+	text-decoration: none; /* text will not be underlined on links */
+}
+
+a:vis
+}
+
+/* we will change what links look like when you hover with the  mouse */
+a:hover {
+	color: red;
+	font-weight: bold;
+	text-decoration: underline dotted orange;
+}
+
+a:active {
+	background-color: black;
+	font-style: italic;
+}
+/* It always goes in this order LVHA link >visited >hover >active */
+
+
+/* ID Selector then class then element selector then universal selector order of resolving conflicting declarations */
+/* Resolving conflicts now */
+#copywrite {
+	color: red;
+}
+
+.copywrite {
+	color: blue;
+}
+
+.text {
+	color: yellow;
+}
+
+footer p {
+	color: green;
+}
+
+/* Id has the highest priority - hover over selectore to look at selector  specificty to get  an idea of which will come first */
