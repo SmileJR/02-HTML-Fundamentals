@@ -1,12 +1,16 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-	font-family: sans-serif;
-	color: #444;
+/* universal  selector   - this selector has the lowest priority */
+* {
+
 }
+
+/* body is the parent element */
+body { 
+	color: #444;
+	font-family: sans-serif;
+	border-top: 10px #1098ad solid
+	/* border property does not get inhereted */
+}
+
 
 /*this selector will change all H to the same color instead of pasting the color into each snippet of code*/
 h1,
@@ -142,7 +146,7 @@ a:active {
 
 /* ID Selector then class then element selector then universal selector order of resolving conflicting declarations */
 /* Resolving conflicts now */
-#copywrite {
+/*#copywrite {
 	color: red;
 }
 
@@ -155,7 +159,13 @@ a:active {
 }
 
 footer p {
-	color: green;
+	color: green !important;
+}
+/* !important is a hack that you should not use */
+/* Id has the highest priority - hover over selectore to look at selector  specificty to get  an idea of which will come first */
+
+nav {
+	font-size: 20px;
 }
 
-/* Id has the highest priority - hover over selectore to look at selector  specificty to get  an idea of which will come first */
+

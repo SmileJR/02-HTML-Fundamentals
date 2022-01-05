@@ -1,0 +1,41 @@
+/* Converse Challenge CSS */
+.conversebody {
+	border: 5px black solid;
+	font-family: sans-serif;
+	line-height: 1.4;
+}
+
+/* This is the title of the shoe with the grey background */
+.shoename {
+	color: black;
+	background-color: rgb(227, 223, 223);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* shoe information */
+.price {
+	font-size: 25px;
+}
+
+.shipping {
+	font-size: 12px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: rgb(105, 104, 104);
+}
+
+.convbutt {
+	border: #0a1822;
+}
+
+/* specify links in this order link visited hover active */
+.moreinfo:link,
+.moreinfo:visited {
+	color: black;
+}
+
+.moreinfo:hover,
+.moreinfo:active {
+	text-decoration: none;
+}
