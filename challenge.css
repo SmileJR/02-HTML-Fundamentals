@@ -25,10 +25,6 @@
 	color: rgb(105, 104, 104);
 }
 
-.convbutt {
-	border: #0a1822;
-}
-
 /* specify links in this order link visited hover active */
 .moreinfo:link,
 .moreinfo:visited {
@@ -38,4 +34,29 @@
 .moreinfo:hover,
 .moreinfo:active {
 	text-decoration: none;
+}
+
+/* shoe details */
+.detailstitle {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.detailslist {
+	list-style: square;
+}
+
+/* button */
+.convbutt {
+	background-color: black;
+	border: none;
+	color: #fff;
+	font-size: 21px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.convbutt:hover {
+	color: black;
+	background-color: white;
 }

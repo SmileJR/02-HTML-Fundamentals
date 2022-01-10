@@ -81,9 +81,10 @@ li {
 	list-style: none;
 }
 
-/*here will will specify background color*/
+/*here will will specify background color as well as the space(padding) of the header*/
 .main-header {
 	background-color: #0a1822;
+	padding: 20px;
 }
 
 aside {
