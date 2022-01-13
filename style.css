@@ -11,6 +11,11 @@ body {
 	/* border property does not get inhereted */
 }
 
+/*here will will specify background color as well as the space(padding) of the header*/
+.main-header {
+	background-color: #0a1822;
+	padding: 20px 40px;
+}
 
 /*this selector will change all H to the same color instead of pasting the color into each snippet of code*/
 h1,
@@ -81,11 +86,7 @@ li {
 	list-style: none;
 }
 
-/*here will will specify background color as well as the space(padding) of the header*/
-.main-header {
-	background-color: #0a1822;
-	padding: 20px;
-}
+
 
 aside {
 	/*aside is ashort hand property*/
