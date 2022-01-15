@@ -1,8 +1,9 @@
 /* universal  selector   - this selector has the lowest priority */
 * {
-	background-color: #9C85AC;
+	background-color: #ffc0cbbd;
 	margin: 0;
 	padding: 0;
+	background-color: #0a1822;
 	/* we want the margin to be applied to every single element using the universal selector */
 
 }
@@ -86,6 +87,7 @@ p {
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
 	line-height: 1.5;
 	margin-bottom: 20px;
+	color: pink;
 }
 
 ul,ol {
@@ -142,15 +144,11 @@ li:last-child {
 aside {
 	width: 500px;
 	padding: 50px;
-	background-color: #f7f7f7;
+	background-color: #d8d3dc;
 	border-top: 5pt solid #8B44A4;
-	border-bottom: 5pt solid ##8B44A4;
+	border-bottom: 5pt solid #8B44A4;
 }
 
-body {
-	/* we change the body's backgrouond color withc this code */
-	/*	background-color: salmon; */
-}
 
 /*.first-list {
 	font-weight: bold;
@@ -178,7 +176,7 @@ article p:first-child {
 
 /* We will now be styling the hyperlinks using psuedo- this will only target elements that have an href attribute */
 a:link {
-	color: #8B44A4;
+	color: #9C85AC;
 	text-decoration: none; /* text will not be underlined on links */
 }
 
@@ -187,7 +185,7 @@ a:vis
 
 /* we will change what links look like when you hover with the  mouse */
 a:hover {
-	color: red;
+	color: #8B44A4;
 	font-weight: bold;
 	text-decoration: underline dotted orange;
 }
@@ -222,7 +220,7 @@ footer p {
 
 .post-img {
 	width: 100%;
-	height: auto;
+  height: 50%;
 }
 /* The width measurement the perccentagevof the width of the parent container which here is the "Basic Lang of the web" heading  */
 
