@@ -5,7 +5,7 @@
 	/* we want the margin to be applied to every single element using the universal selector */
 
 }
-
+/* page section */
 /* body is the parent element */
 body { 
 	color: #444;
@@ -42,6 +42,7 @@ article {
 }
 /* it is very common to use space at the bottom to create verticle space - margin bottom is my fav :D */
 
+/* smaller elements */
 /*this selector will change all H to the same color instead of pasting the color into each snippet of code*/
 h1,
 h2,
@@ -93,6 +94,8 @@ ul,ol {
 li {
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
 	font-size: 20px;
+	margin-bottom: 10px;
+	/* display: inline; */
 }
 
 /* this will make it so the last line item will have no space */
@@ -162,9 +165,10 @@ li:last-child {
 	font-style: italic;
 }
 
+/* This code right here will make every other li ne green frnt 
 li:nth-child(even) {
 	color: green;
-}
+} */
 
 /* Misconseption, this code wont work */
 article p:first-child {
@@ -221,3 +225,9 @@ footer p {
 }
 /* The width measurement the perccentagevof the width of the parent container which here is the "Basic Lang of the web" heading  */
 
+nav a:link {
+	 /*background-color: orangered ;
+	margin: 20px;
+	padding: 20px;
+	display: block; */
+}
