@@ -23,7 +23,6 @@ body {
 	margin-right: auto; 
 	all these are replaced with margin 0 auto */
 	margin: 0 auto;
-	position: relative;
 }
 /* any  elements in container div can only be as wide as the container div */
 /* to center the items on the page use margins with auto */
@@ -252,3 +251,25 @@ button {
 	right: 50px;
 	/* positioning is relative to the veiwport */
 }
+
+.crop {
+        width: 100%;
+        height: 255px;
+        overflow: hidden;
+    }
+
+    .crop img {
+        width: 900px;
+        height: 300px;
+        margin-top: -75px;
+    }
+/* Pseudo  classes  are writen with 1 colon, pseudo elements 2 colons */
+		h1::first-letter {
+font-style: normal;
+margin-right: 5px;
+		}
+
+		/* only paragraphs after h3
+		h3+p::first-line {
+			color: red;
+		} */
