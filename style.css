@@ -27,6 +27,7 @@ article {
 	background-color: #0a1822;
 	padding: 20px 40px;
 	margin-bottom: 60px;
+	height: 80px;
 }
 /* it is very common to use space at the bottom to create verticle space - margin bottom is my fav :D */
 
@@ -124,6 +125,7 @@ li:last-child {
 
 	/*aside is a short hand property*/
 aside {
+	width: 500px;
 	padding: 50px;
 	background-color: #f7f7f7;
 	border-top: 5pt solid #1098ad;
@@ -202,5 +204,9 @@ footer p {
 /* Id has the highest priority - hover over selectore to look at selector  specificty to get  an idea of which will come first */
 
 
-
+.post-img {
+	width: 100%;
+	height: auto;
+}
+/* The width measurement the perccentagevof the width of the parent container which here is the "Basic Lang of the web" heading  */
 
