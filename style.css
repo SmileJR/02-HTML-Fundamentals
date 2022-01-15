@@ -14,6 +14,14 @@ body {
 	/* border property does not get inhereted */
 }
 
+nav {
+	font-size: 20px;
+}
+/* Notes on margin and padding: Whenever you need some space inside an element (useful with backgrou d color or border on the elemnt use padding*/
+/* Notes on margin and padding: Whenever you need to create space outside an element or also to c reate space between multiple elements use amrgins and if you need verticle space use margins as well*/
+article {
+	margin-bottom: 60px;
+}
 /*here will will specify background color as well as the space(padding) of the header*/
 .main-header {
 	background-color: #0a1822;
@@ -46,7 +54,11 @@ h2 {
 h3 {
 	font-size: 30px;
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
+	margin-bottom: 20px;
+	margin-top: 40px;
+
 }
+/* Collapsing margins - when we have 2 margins occupying the same space, only one of them is visible on the page */
 
 h4 {
 	font-size: 20px;
@@ -62,6 +74,10 @@ p {
 	margin-bottom: 20px;
 }
 
+ul,ol {
+	margin-left:   50px;
+	margin-bottom: 50px;
+}
 li {
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
 	font-size: 20px;
@@ -185,8 +201,6 @@ footer p {
 /* !important is a hack that you should not use */
 /* Id has the highest priority - hover over selectore to look at selector  specificty to get  an idea of which will come first */
 
-nav {
-	font-size: 20px;
-}
+
 
 
