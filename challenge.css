@@ -1,6 +1,23 @@
 /* Converse Challenge CSS */
+* {
+	margin: 0;
+}
+.product {
+	width: 825px;
+	border: 4px solid black;
+	margin: 50px auto;
+}
+
+.cvbody {
+	border: black 5px solid;
+	width: 100%;
+	padding-right: 50px;
+	padding-left: auto;
+}
+
 .conversebody {
 	border: 5px black solid;
+	margin: 0 auto;
 	font-family: sans-serif;
 	line-height: 1.4;
 }
@@ -11,11 +28,13 @@
 	background-color: rgb(227, 223, 223);
 	text-align: center;
 	text-transform: uppercase;
+	padding: 15px;
 }
 
 /* shoe information */
 .price {
 	font-size: 25px;
+	margin-bottom: 20px;
 }
 
 .shipping {
@@ -23,12 +42,15 @@
 	font-weight: bolder;
 	text-transform: uppercase;
 	color: rgb(105, 104, 104);
+	margin-bottom: 20px;
 }
 
 /* specify links in this order link visited hover active */
 .moreinfo:link,
 .moreinfo:visited {
 	color: black;
+	margin-bottom: 20px;
+	/* you cannot use margins on  small elements like anchors links */
 }
 
 .moreinfo:hover,
@@ -40,10 +62,20 @@
 .detailstitle {
 	text-transform: uppercase;
 	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .detailslist {
 	list-style: square;
+	padding-bottom: 30px;
+	margin-top: 10px;
+}
+
+ul li {
+	margin: 15px;
+	padding: 10px;
+	line-height: 5px;
 }
 
 /* button */
@@ -54,9 +86,13 @@
 	font-size: 21px;
 	text-transform: uppercase;
 	cursor: pointer;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .convbutt:hover {
 	color: black;
 	background-color: white;
+	border-top: black 5px solid;
 }

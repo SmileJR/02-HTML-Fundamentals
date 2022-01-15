@@ -2,7 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	/* we want the margin to be applied to ev ery single element using the universal selector */
+	/* we want the margin to be applied to every single element using the universal selector */
 
 }
 
@@ -13,6 +13,17 @@ body {
 	border-top: 10px #1098ad solid
 	/* border property does not get inhereted */
 }
+
+.container{
+	width: 800px;
+	/* margin-left: auto;
+	margin-right: auto; 
+	all these are replaced with margin 0 auto */
+	margin: 0 auto;
+}
+/* any  elements in container div can only be as wide as the container div */
+/* to center the items on the page use margins with auto */
+
 
 nav {
 	font-size: 20px;
