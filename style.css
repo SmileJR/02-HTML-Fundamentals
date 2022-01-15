@@ -18,7 +18,9 @@ body {
 .main-header {
 	background-color: #0a1822;
 	padding: 20px 40px;
+	margin-bottom: 60px;
 }
+/* it is very common to use space at the bottom to create verticle space - margin bottom is my fav :D */
 
 /*this selector will change all H to the same color instead of pasting the color into each snippet of code*/
 h1,
@@ -37,6 +39,8 @@ h1 {
 h2 {
 	font-size: 40px;
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code */
+	margin-bottom: 30px;
+
 }
 
 h3 {
@@ -55,6 +59,7 @@ p {
 	font-size: 22px;
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
 	line-height: 1.5;
+	margin-bottom: 20px;
 }
 
 li {
@@ -84,6 +89,10 @@ li:last-child {
 	font-style: italic;*/
 }
 
+#relatedpostheading {
+	font-size: 27px;
+}
+
 /*Now we are using classes*/
 .related-author {
 	font-size: 18px;
@@ -93,11 +102,13 @@ li:last-child {
 .related {
 	list-style: none;
 }
+.post-header {
+	margin-bottom: 40px;
+}
 
-
-
+	/*aside is a short hand property*/
 aside {
-	/*aside is ashort hand property*/
+	padding: 50px;
 	background-color: #f7f7f7;
 	border-top: 5pt solid #1098ad;
 	border-bottom: 5pt solid ##1098ad;
