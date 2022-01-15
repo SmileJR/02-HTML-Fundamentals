@@ -1,5 +1,6 @@
 /* universal  selector   - this selector has the lowest priority */
 * {
+	background-color: #9C85AC;
 	margin: 0;
 	padding: 0;
 	/* we want the margin to be applied to every single element using the universal selector */
@@ -10,7 +11,7 @@
 body { 
 	color: #444;
 	font-family: sans-serif;
-	border-top: 10px #1098ad solid
+	border-top: 10px #8B44A4 solid
 	/* border property does not get inhereted */
 }
 
@@ -47,7 +48,7 @@ article {
 h1,
 h2,
 h3 {
-	color: #1098ad;
+	color: #8B44A4;
 }
 h1 {
 	font-size: 26px;
@@ -142,8 +143,8 @@ aside {
 	width: 500px;
 	padding: 50px;
 	background-color: #f7f7f7;
-	border-top: 5pt solid #1098ad;
-	border-bottom: 5pt solid ##1098ad;
+	border-top: 5pt solid #8B44A4;
+	border-bottom: 5pt solid ##8B44A4;
 }
 
 body {
@@ -177,7 +178,7 @@ article p:first-child {
 
 /* We will now be styling the hyperlinks using psuedo- this will only target elements that have an href attribute */
 a:link {
-	color: #1098ad;
+	color: #8B44A4;
 	text-decoration: none; /* text will not be underlined on links */
 }
 
@@ -226,8 +227,15 @@ footer p {
 /* The width measurement the perccentagevof the width of the parent container which here is the "Basic Lang of the web" heading  */
 
 nav a:link {
+	margin-right: 50px;
+	margin-top: 10px;
+	display: inline-block;
 	 /*background-color: orangered ;
 	margin: 20px;
 	padding: 20px;
 	display: block; */
+}
+
+nav a:link:last-child {
+	margin-right: 0;
 }
