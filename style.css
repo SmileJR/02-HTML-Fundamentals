@@ -12,16 +12,18 @@
 body { 
 	color: #444;
 	font-family: sans-serif;
-	border-top: 10px #8B44A4 solid
+	border-top: 10px #8B44A4 solid;
 	/* border property does not get inhereted */
+	position: relative;
 }
 
 .container{
-	width: 800px;
+	width: 950px;
 	/* margin-left: auto;
 	margin-right: auto; 
 	all these are replaced with margin 0 auto */
 	margin: 0 auto;
+	position: relative;
 }
 /* any  elements in container div can only be as wide as the container div */
 /* to center the items on the page use margins with auto */
@@ -117,7 +119,7 @@ li:last-child {
 
 #author {
 	font-style: italic;
-	font-size: 10px;
+	font-size: 20Px;
 	/* This was the Nested descendant selector that we replaced with #author ID but we dont need it anymore now that we are using Id to streamline the code: 
 	article header p {
 	font-style: italic;*/
@@ -218,9 +220,9 @@ footer p {
 /* Id has the highest priority - hover over selectore to look at selector  specificty to get  an idea of which will come first */
 
 
-.post-img {
+.pinkcode {
 	width: 100%;
-  height: 50%;
+  height: auto;
 }
 /* The width measurement the perccentagevof the width of the parent container which here is the "Basic Lang of the web" heading  */
 
@@ -236,4 +238,17 @@ nav a:link {
 
 nav a:link:last-child {
 	margin-right: 0;
+}
+
+button {
+	font-size: 23px;
+	cursor: pointer;
+	padding: 20px;
+	color: #450737;
+	background-color: #DC7EC0;
+	border:solid #9C85AC 6px;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	/* positioning is relative to the veiwport */
 }
