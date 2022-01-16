@@ -118,6 +118,7 @@ ul li {
 	height: 21px;
 	background-color: black;
 	margin-top: 20px;
+	margin-left: 12px;
 }
 
 .grey {
@@ -127,6 +128,7 @@ ul li {
 	height: 21px;
 	background-color: grey;
 	margin-top: 20px;
+	margin-left: 12px;
 }
 
 .red {
@@ -136,6 +138,7 @@ ul li {
 	height: 21px;
 	background-color: red;
 	margin-top: 20px;
+	margin-left: 12px;
 }
 .magenta {
 	display: inline-block;
@@ -144,6 +147,7 @@ ul li {
 	height: 21px;
 	background-color: mediumvioletred;
 	margin-top: 20px;
+	margin-left: 12px;
 }
 .pink {
 	display: inline-block;
@@ -152,12 +156,14 @@ ul li {
 	height: 21px;
 	background-color: pink;
 	pmargin-top: 20px;
+	margin-left: 12px;
 }
 .turquoise {
 	display: inline-block;
-	border: turquoise solid;
+	border: teal solid;
 	width: 21px;
 	height: 21px;
-	background-color: turquoise;
+	background-color: teal;
 	margin-top: 20px;
+	margin-left: 12px;
 }
