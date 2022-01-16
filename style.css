@@ -7,12 +7,18 @@
 	/* we want the margin to be applied to every single element using the universal selector */
 
 }
+
+/* CURSOR */
+html {
+    cursor: url('/img/pinkregularcursor.png'), pointer;
+}
+
 /* page section */
 /* body is the parent element */
 body { 
 	color: #444;
 	font-family: sans-serif;
-	border-top: 10px #8B44A4 solid;
+	border-top: 10px magenta solid;
 	/* border property does not get inhereted */
 	position: relative;
 }
@@ -274,7 +280,18 @@ margin-right: 5px;
 			color: red;
 		} */
 
+		h2 {
+			position: relative;
+		}
 		h2::after {
+			font-size: 13px;
+			color: magenta;
 			content: "🔥HOT🔥";
-
+			background-color: black;
+			font-weight: bold;
+			display: inline-block;
+			padding: 5px 6px;
+			position: absolute;
+			top: -10;
+			right: -25;
 		}
