@@ -5,25 +5,24 @@
 	padding: 0;
 	background-color: #0a1822;
 	/* we want the margin to be applied to every single element using the universal selector */
-
 }
 
 /* CURSOR */
 html {
-    cursor: url('/img/pinkregularcursor.png'), pointer;
+	cursor: url("/img/pinkregularcursor.png"), pointer;
 }
 
 /* page section */
 /* body is the parent element */
-body { 
+body {
 	color: #444;
 	font-family: sans-serif;
-	border-top: 10px magenta solid;
+	border: 5px magenta solid;
 	/* border property does not get inhereted */
 	position: relative;
 }
 
-.container{
+.container {
 	width: 950px;
 	/* margin-left: auto;
 	margin-right: auto; 
@@ -33,9 +32,10 @@ body {
 /* any  elements in container div can only be as wide as the container div */
 /* to center the items on the page use margins with auto */
 
-
 nav {
 	font-size: 20px;
+	text-align: center;
+	/* text is centered in the parent container */
 }
 /* Notes on margin and padding: Whenever you need some space inside an element (useful with backgrou d color or border on the elemnt use padding*/
 /* Notes on margin and padding: Whenever you need to create space outside an element or also to c reate space between multiple elements use amrgins and if you need verticle space use margins as well*/
@@ -56,7 +56,7 @@ article {
 h1,
 h2,
 h3 {
-	color: #8B44A4;
+	color: #8b44a4;
 }
 h1 {
 	font-size: 26px;
@@ -70,7 +70,6 @@ h2 {
 	font-size: 40px;
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code */
 	margin-bottom: 30px;
-
 }
 
 h3 {
@@ -78,7 +77,6 @@ h3 {
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
 	margin-bottom: 20px;
 	margin-top: 40px;
-
 }
 /* Collapsing margins - when we have 2 margins occupying the same space, only one of them is visible on the page */
 
@@ -97,8 +95,9 @@ p {
 	color: pink;
 }
 
-ul,ol {
-	margin-left:   50px;
+ul,
+ol {
+	margin-left: 50px;
 	margin-bottom: 50px;
 }
 li {
@@ -124,7 +123,7 @@ li:last-child {
 
 #author {
 	font-style: italic;
-	font-size: 20Px;
+	font-size: 20px;
 	/* This was the Nested descendant selector that we replaced with #author ID but we dont need it anymore now that we are using Id to streamline the code: 
 	article header p {
 	font-style: italic;*/
@@ -147,15 +146,14 @@ li:last-child {
 	margin-bottom: 40px;
 }
 
-	/*aside is a short hand property*/
+/*aside is a short hand property*/
 aside {
 	width: 500px;
 	padding: 50px;
 	background-color: #d8d3dc;
-	border-top: 5pt solid #8B44A4;
-	border-bottom: 5pt solid #8B44A4;
+	border-top: 5pt solid #8b44a4;
+	border-bottom: 5pt solid #8b44a4;
 }
-
 
 /*.first-list {
 	font-weight: bold;
@@ -183,18 +181,19 @@ article p:first-child {
 
 /* We will now be styling the hyperlinks using psuedo- this will only target elements that have an href attribute */
 a:link {
-	color: #9C85AC;
+	color: mediumvioletred;
 	text-decoration: none; /* text will not be underlined on links */
 }
 
-a:vis
+a:visited {
+	color: palevioletred;
 }
 
 /* we will change what links look like when you hover with the  mouse */
 a:hover {
-	color: #8B44A4;
-	font-weight: bold;
-	text-decoration: underline dotted orange;
+	color: #8b44a4;
+	font-weight: bolder;
+	text-decoration: underline;
 }
 
 a:active {
@@ -202,7 +201,6 @@ a:active {
 	font-style: italic;
 }
 /* It always goes in this order LVHA link >visited >hover >active */
-
 
 /* ID Selector then class then element selector then universal selector order of resolving conflicting declarations */
 /* Resolving conflicts now */
@@ -224,10 +222,9 @@ footer p {
 /* !important is a hack that you should not use */
 /* Id has the highest priority - hover over selectore to look at selector  specificty to get  an idea of which will come first */
 
-
 .pinkcode {
 	width: 100%;
-  height: auto;
+	height: auto;
 }
 /* The width measurement the perccentagevof the width of the parent container which here is the "Basic Lang of the web" heading  */
 
@@ -235,7 +232,7 @@ nav a:link {
 	margin-right: 50px;
 	margin-top: 10px;
 	display: inline-block;
-	 /*background-color: orangered ;
+	/*background-color: orangered ;
 	margin: 20px;
 	padding: 20px;
 	display: block; */
@@ -250,8 +247,8 @@ button {
 	cursor: pointer;
 	padding: 20px;
 	color: #450737;
-	background-color: #DC7EC0;
-	border:solid #9C85AC 6px;
+	background-color: #dc7ec0;
+	border: solid #9c85ac 6px;
 	position: absolute;
 	bottom: 50px;
 	right: 50px;
@@ -259,39 +256,39 @@ button {
 }
 
 .crop {
-        width: 100%;
-        height: 255px;
-        overflow: hidden;
-    }
+	width: 100%;
+	height: 255px;
+	overflow: hidden;
+}
 
-    .crop img {
-        width: 900px;
-        height: 300px;
-        margin-top: -75px;
-    }
+.crop img {
+	width: 900px;
+	height: 300px;
+	margin-top: -75px;
+}
 /* Pseudo  classes  are writen with 1 colon, pseudo elements 2 colons */
-		h1::first-letter {
-font-style: normal;
-margin-right: 5px;
-		}
+h1::first-letter {
+	font-style: normal;
+	margin-right: 5px;
+}
 
-		/* only paragraphs after h3
+/* only paragraphs after h3
 		h3+p::first-line {
 			color: red;
 		} */
 
-		h2 {
-			position: relative;
-		}
-		h2::after {
-			font-size: 13px;
-			color: magenta;
-			content: "🔥HOT🔥";
-			background-color: black;
-			font-weight: bold;
-			display: inline-block;
-			padding: 5px 6px;
-			position: absolute;
-			top: -10;
-			right: -25;
-		}
+h2 {
+	position: relative;
+}
+h2::after {
+	font-size: 13px;
+	color: magenta;
+	content: "🔥NEW HOTNESS🔥";
+	background-color: black;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 6px;
+	position: absolute;
+	top: -10;
+	right: -25;
+}
