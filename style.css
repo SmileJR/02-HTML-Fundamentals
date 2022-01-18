@@ -312,3 +312,11 @@ h1 {
 nav {
 	float: right;
 }
+
+/* .clear fix hack  will create a brand new ellement */
+.clearfix::after {
+	clear: both;
+	 content: '';
+	 display: block;
+}
+/* clearing floats only work on block elements  */
