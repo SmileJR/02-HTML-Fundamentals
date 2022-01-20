@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-	width: 950px;
+	width: 1200px;
 	/* margin-left: auto;
 	margin-right: auto; 
 	all these are replaced with margin 0 auto */
@@ -115,6 +115,7 @@ li:last-child {
 /* You can only use an ID once*/
 #copywrite {
 	font-size: 16px;
+	background-color: mediumvioletred;
 	/* footer p {
 	this descendent selector: all the p elements inside the fotter
 	font-size: 16px;
@@ -131,6 +132,8 @@ li:last-child {
 
 #relatedpostheading {
 	font-size: 27px;
+	background-color: rgb(32, 4, 32);
+	color: pink;
 }
 
 /*Now we are using classes*/
@@ -141,6 +144,7 @@ li:last-child {
 
 .related {
 	list-style: none;
+	margin-left: 0;
 }
 .post-header {
 	margin-bottom: 40px;
@@ -148,11 +152,14 @@ li:last-child {
 
 /*aside is a short hand property*/
 aside {
-	width: 500px;
-	padding: 50px;
+	width: 800px;
+	padding: 40px 50px;
 	background-color: #d8d3dc;
 	border-top: 5pt solid #8b44a4;
 	border-bottom: 5pt solid #8b44a4;
+	background-color: rgb(233, 194, 226);
+	width: 250px;
+	float: right;
 }
 
 /*.first-list {
@@ -313,10 +320,23 @@ nav {
 	float: right;
 }
 
-/* .clear fix hack  will create a brand new ellement */
+/* .clear fix hack  will create a brand new element that will be the 
+LAST child of the container */
 .clearfix::after {
 	clear: both;
 	 content: '';
 	 display: block;
 }
 /* clearing floats only work on block elements  */
+
+
+article {
+	width: 780px;
+	float: left ;
+}
+
+
+
+footer {
+clear: both;
+}
