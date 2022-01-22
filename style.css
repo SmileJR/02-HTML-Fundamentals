@@ -5,6 +5,7 @@
 	padding: 0;
 	background-color: #0a1822;
 	/* we want the margin to be applied to every single element using the universal selector */
+	box-sizing: border-box;
 }
 
 /* CURSOR */
@@ -23,7 +24,7 @@ body {
 }
 
 .container {
-	width: 1200px;
+	width: 1400px;
 	/* margin-left: auto;
 	margin-right: auto; 
 	all these are replaced with margin 0 auto */
@@ -85,6 +86,7 @@ h4 {
 	/* all the font-family: sans-serif; have been moved to the top and grouped together to clean up the code  :D*/
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 p {
@@ -152,13 +154,13 @@ li:last-child {
 
 /*aside is a short hand property*/
 aside {
-	padding: 40px 55px;
+	width: 500px;
+	float: right;
 	background-color: #d8d3dc;
 	border-top: 5pt solid #8b44a4;
 	border-bottom: 5pt solid #8b44a4;
 	background-color: rgb(233, 194, 226);
-	width: 299px;
-	float: right;
+	padding: 50px 40px;
 }
 
 /*.first-list {
@@ -312,7 +314,7 @@ h2::after {
 }
 
 h1 {
-	float: : left;
+	float: left;
 }
 
 nav {
