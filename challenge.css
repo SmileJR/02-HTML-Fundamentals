@@ -1,6 +1,7 @@
 /* Converse Challenge CSS */
 * {
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 .product {
@@ -16,7 +17,10 @@
 	padding-right: 50px;
 	padding-left: auto;
 }
-
+.productimage {
+	float: left;
+	margin-right: 40px;
+}
 .conversebody {
 	border: 5px black solid;
 	margin: 0 auto;
@@ -37,12 +41,9 @@
 .price {
 	font-size: 25px;
 	margin-bottom: 20px;
-	float: right;
+	float: left;
 }
 
-.boxwithinfo {
-	
-}
 .shipping {
 	font-size: 12px;
 	font-weight: bolder;
@@ -50,7 +51,11 @@
 	color: rgb(105, 104, 104);
 	margin-bottom: 20px;
 	float: right;
+	margin-top: 8px;
 }
+
+/* .boxwithinfo {
+} */
 
 /* specify links in this order link visited hover active */
 .moreinfo:link,
@@ -65,10 +70,18 @@
 	text-decoration: none;
 }
 
+.productinfo {
+	float: left;
+	/*  */
+	width: 243px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
 /* shoe details */
-.detailsdiv {
-	float: right;
-	display: inline-block;
+.productdetails {
+	float: left;
+	width: 243px;
+	margin-top: 20px;
 }
 
 .detailstitle {
@@ -177,4 +190,20 @@ ul li {
 	background-color: teal;
 	margin-top: 20px;
 	margin-left: 12px;
+}
+
+/* 
+.productdescription {
+	clear: both;
+	margin-bottom: 10px;
+ } */
+
+.container {
+	background-color: red;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
 }
